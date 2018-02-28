@@ -11,52 +11,73 @@
 </head>
  
 <body>
-
 	<header> 
-		<h1>THE CODE REVIEW</h1>
-
-		<h2 class="intro-header"> Signup for our newsletter</h2>
-			<div class="intro"> Get the latest news on how your code is doing right in your inbox </div>
+		<h2 class="title-header">THE CODE REVIEW</h2>
+			<div class="header-container">
+				<h2 class="intro-header">Signup for our newsletter</h2>
+				<div class="intro"> Get the latest news on how your code is doing right in your inbox </div>
+			</div>
+			<div class="line-separation">
+				<hr class="bold-line">
+				<hr class="thin-line">
+			</div>
 	</header>
-	<tfoot type=text id="copyright">Copyright The Code Review</tfoot>
-		<h2> Contact Information </h2>
-	  
-	  		<form action="index.html" method="post">
+	 
+	  		<form action="index.html" method="post"> 
 
-		        <h1> Contact Information </h1>
-		        <label for="name">Full Name</label>
-		        <input type="text" id="name" name="user_name">
-		        <label for="email">Email Address</label>
-		        <input type="email" id="mail" name="user_email">
-		        <label for="phone-number">Phone Number</label>
-		        <input type="phone-number" id="phone-number" name="user_phone-number">
-		        <label for="street-address">Street Address</label>
-		        <input type="text" id="street-address" name="user_street-address">
-		        <label for="city">City</label>
-		        <input type="text" id="city" name="user_city">
-		        <label for="state">State</label>
-		        <input type="text" id="state" name="user_state">
-		        <label for="zip-code">Zip Code</label>
-		        <input type="Number" id="zip-code" name=user_zip_code>
-	        </form>
+		  		<fieldset>		  			
+				    <legend  class="contact-info">Contact Information</legend>
+				        <div class="flex-containertop">
+					        <label for="name">Full Name</label>
+					        <input class="bdr-design" type="text" id="name" name="user_name" placeholder="Required">
+					        <label for="mail">Email Address</label>
+					        <input class="bdr-design" type="email" id="mail" name="user_email" placeholder="Required">
+					        <label for="phone-number">Phone Number</label>
+					        <input class="bdr-design" type="Number" id="phone-number" name="user_phone-number">
+					        <label for="street-address">Street Address</label>
+					        <input class="bdr-design" type="text" id="street-address" name="user_street-address">
+					        <label for="city">City</label>
+					        <input class="bdr-design" type="text" id="city" name="user_city">
+					        <label for="state">State</label>
+					        <select class="bdr-design" id="state" name="user_state">
+					        	<option value="state" selected disabled>Choose State</option>
+					        	<option value="CA">California</option>
+					        	<option value="CT">Connecticut</option>
+					        	<option value="CO">Colorado</option>
+					        </select>
+					        <label for="zip-code">Zip Code</label>
+					        <input class="bdr-design" type="text" id="zip-code" name=user_zip_code>
+				    </div>
+			    </fieldset>			    
 
+				<hr class="thin-line-bottom">
 
-
-	        <h2> Newsletter </h2>
-	        <form>
-	        	<div> Select the newsletters you would like to receive </div>
-	        	<button type=submit>HTML News</button>
-	        	<button type=submit>CSS News</button>
-	        	<button type=submit>Javascript news</button>
-
-	        	<h2> Newsletter format</h2>
-	        	<div> Select the newsletters you would like to receive <div>
-	        		<button type=submit>HTML</button>
-	        		<button type=submit>Plain text</button>
-	        		<label for="topics">Other topcis you'd like to hear about</label>
-	        		<textarea id="topics" name="user_topics"></textarea>
-		         <button type="submit">Sign Up</button>
-		    </form>
+			    <fieldset>			    	
+		    		<legend class="contact-infobottom">Newsletter</legend>	
+			    		<div class="flex-containerbottom">	        
+		        		   	<label class="news-intro">Select the newsletters you would like to receive </label>
+				        		<div class="news-checkbox">
+						           	<input class="news-type" type="checkbox" id="html" value="html_newsletter" name="user_html"><label for="html">HTML NEWS</label><br><br>
+						        	<input class="news-type" type="checkbox" id="css" value="css_newsletter" name="user_css"><label for="css">CSS</label><br><br>
+									<input class="news-type" type="checkbox" id="javascript" value="javascript_newsletter" name="user_javascript"><label for="javascript">Javascript news</label><br><br>
+								</div>
+			        	
+			        			<div class="newsletter-type">
+					        		<label class="newsform"> Newsletter format</label>
+					        			<div class="radio-circle">		        
+							        		<input type="radio" id="html-format" name="user_htmlnewsletter" value="html-format"><label for="html-format">html</label><br><br>
+							        		<input type="radio" id="plaintext-format" name="user_plaintext-radio" value="plaintext-format"><label for="plaintext-format">plaintext</label><br><br>
+						        		</div>
+						        </div>
+						        <div class="others">
+						        	<label>Other topics you'd like to hear about</label>
+						        		<textarea id="topics" name="user_topics"></textarea>
+							         <button class="btn-default" type="submit">Sign Up</button>
+							    </div>
+						</div>
+			    </fieldset>
+			</form>
+		<footer class="copyright">Copyright The Code Review</footer>
 </body>
 </html>
  
