@@ -37,22 +37,24 @@ label {
 
 input, select {
   width:100%;
+  color:#1b1a1a;
   }
 
 option[value="state"]{
-  color:#9c9ca2;
+  color:#d4d2d2;
 }
 
 .bdr-design {
   border-radius: 5px;
   height:35px;
-  background: lightgray; 
+  background: #d4d2d2; 
 }
 
 ::placeholder{
   font-style:italic;
   text-align:right;
   font-size:small;
+  color:#413e3e;
 }
 
 
@@ -174,6 +176,10 @@ option[value="state"]{
   font-weight: bold;
 }
 
+input[type="radio"]:checked+label{
+  font-weight:bold;
+}
+
 
 input[type="button"],
 input[type="radio"] 
@@ -240,7 +246,6 @@ textarea:focus {
   margin:0 auto;
 }
 
-
 .line-separation{
   width:64%;
   margin:0 auto;
@@ -257,13 +262,39 @@ textarea:focus {
   margin:0 auto;
  }
 
+ label {
+    width: 30%;
+    margin-top: 5px;
+  }
+
+  input, select {
+    width: 65%;
+    margin-bottom: 15px;
+}
+
+#state{
+  width:66.5%;
+}
+
+label[for="zip-code"] {
+    width: 33.5%;
+}
+
+#zip-code {
+    width: 33%;
+    margin: 0 auto;
+    margin-left: 0px;
+}
+
  .thin-line-bottom{
-  width:59%;
+  width:58%;
   margin: 0 auto;
+  margin-top:15px;
  }
 
  .contact-infobottom {
     margin-left:20%;
+    margin-top:15px;
     color:#050404;
 }
  .flex-containerbottom{
@@ -271,6 +302,10 @@ textarea:focus {
   flex-wrap:wrap;
   width:60%;
   margin:0 auto;
+ }
+
+ .news-intro{
+  width:75%;
  }
 
   .news-checkbox {
