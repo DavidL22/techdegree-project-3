@@ -7,8 +7,8 @@ styles.css
 }
 
 html {
-color: #9c9ca2;
-font-size: 1em;
+  color: #9c9ca2;
+  font-size: 1em;
 }
 
 h1 {
@@ -76,7 +76,7 @@ option[value="state"]{
   }
 
 .intro-header { 
- text-align:center;
+  text-align:center;
 }
 
 .intro {
@@ -95,21 +95,21 @@ option[value="state"]{
  }
 
 .contact-info {
-    padding: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: larger;
-    width:100%;
-    margin:0 auto;
-    padding-left:0px;
-    color: #050404;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
+  width:100%;
+  margin:0 auto;
+  padding-left:0px;
+  color: #050404;
 }
 
 .bold-line {
-    height: 2px;
-    color: #0c0b0b;
-    background-color: #050404;
-    width:90%;
+  height: 2px;
+  color: #0c0b0b;
+  background-color: #050404;
+  width:90%;
 }
 
 .thin-line{
@@ -126,60 +126,60 @@ option[value="state"]{
   }
 
 #zip-code {
-    width: 50%;
+  width: 50%;
 }
-  .flex-containerbottom {  
+
+.flex-containerbottom {  
   display:flex;
   flex-wrap:wrap;
   width:100%;
  }
 
- .contact-infobottom {
-    padding: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: larger;
-    width:100%;
-    margin:0 auto;
-    padding-left:0px;
-    color:#050404;
+.contact-infobottom {
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
+  width:100%;
+  margin:0 auto;
+  padding-left:0px;
+  color:#050404;
 }
 
-  .news-intro {
-  color: #9c9ca2;
-  }
+.news-intro {
+color: #9c9ca2;
+}
 
-  .news-checkbox {
-    display: inline;
-    width: 100%;
-    margin-left: -10%;
-    margin-top: 10px;
-  }
+.news-checkbox {
+  display: inline;
+  width: 100%;
+  margin-left: -10%;
+  margin-top: 10px;
+}
 
-  .newsletter-type {
-    width:100%;
-  }
+.newsletter-type {
+  width:100%;
+}
 
-  input[type="checkbox"]{
-    width:25%
-  }
+input[type="checkbox"]{
+  width:25%
+}
 
- label[for="html"], 
- label[for="css"],
- label[for="javascript"]{
-    width:75%;
-    margin:0;
-    padding:0;
-  }
+label[for="html"], 
+label[for="css"],
+label[for="javascript"]{
+  width:75%;
+  margin:0;
+  padding:0;
+}
 
-  input[type="checkbox"]:checked+label{
-  font-weight: bold;
+input[type="checkbox"]:checked+label{
+font-weight: bold;
 }
 
 input[type="radio"]:checked+label{
   font-weight:bold;
 }
-
 
 input[type="button"],
 input[type="radio"] 
@@ -188,9 +188,9 @@ input[type="submit"] {
 }
 
 .radio-circle {
-    width: 100%;
-    margin-top:15px;
-    margin-left: -20px;
+  width: 100%;
+  margin-top:15px;
+  margin-left: -20px;
 }
 
 input[type="radio"]{
@@ -208,6 +208,7 @@ input[type="radio"]{
 
 .others{
 width: 100%;
+text-align:center;
 }
 
 .btn-default{
@@ -215,7 +216,7 @@ width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   background: #2af6b1;
-  width: 96.5%;
+  width: 96%;
   height: 25%;
   border-radius: 5px;
   margin-top:10px;
@@ -236,10 +237,9 @@ textarea:focus {
   border:solid blue;
 }
 
-/* -------------------------Media Queries------------------------- */
+/* -------------------------Media Query------------------------- */
 
 @media (min-width: 768px) {
-
 
 .header-container{
   width:65%;
@@ -262,14 +262,14 @@ textarea:focus {
   margin:0 auto;
  }
 
- label {
-    width: 30%;
-    margin-top: 5px;
-  }
+label {
+  width: 30%;
+  margin-top: 5px;
+}
 
-  input, select {
-    width: 65%;
-    margin-bottom: 15px;
+input, select {
+  width: 65%;
+  margin-bottom: 15px;
 }
 
 #state{
@@ -286,54 +286,55 @@ label[for="zip-code"] {
     margin-left: 0px;
 }
 
- .thin-line-bottom{
-  width:58%;
-  margin: 0 auto;
+.thin-line-bottom{
+width:58%;
+margin: 0 auto;
+margin-top:15px;
+}
+
+.contact-infobottom {
+  margin-left:20%;
   margin-top:15px;
- }
-
- .contact-infobottom {
-    margin-left:20%;
-    margin-top:15px;
-    color:#050404;
+  color:#050404;
 }
- .flex-containerbottom{
-  display:flex;
-  flex-wrap:wrap;
-  width:60%;
-  margin:0 auto;
- }
 
- .news-intro{
+.flex-containerbottom{
+display:flex;
+flex-wrap:wrap;
+width:60%;
+margin:0 auto;
+}
+
+.news-intro{
+width:75%;
+}
+
+.news-checkbox {
+  display: inline;
+  width: 80%;
+  margin-left: -40px;
+  margin-top: 10px;
+}
+
+label[for="html"], 
+label[for="css"],
+label[for="javascript"]{
   width:75%;
- }
-
-  .news-checkbox {
-    display: inline;
-    width: 80%;
-    margin-left: -40px;
-    margin-top: 10px;
-  }
-
-  label[for="html"], 
-  label[for="css"],
-  label[for="javascript"]{
-    width:75%;
-    margin:0;
-    padding:0;
-    margin-left:-15px;
-  }
-
-  .newsletter-type{
-    width:80%;
-  }
-
-  .radio-circle {
-   width: 80%;
-   margin-top: 15px;
-   margin-left: -25px;
+  margin:0;
+  padding:0;
+  margin-left:-15px;
 }
- }
+
+.newsletter-type{
+  width:80%;
+}
+
+.radio-circle {
+ width: 80%;
+ margin-top: 15px;
+ margin-left: -25px;
+}
+}
 
 
 
